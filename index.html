@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal</title>
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.png" /> -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header-container">
-            <a class="header-logo-link" href="./index.html" aria-label="company logo">
-                <svg class="header-logo-icon" width="100" heigth="16">
-                    <use href="./img/icons.svg#icon-minimal"></use>
-                </svg>
-            </a>
-            <nav class="header-nav">
-                <ul class="header-menu-list">
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#about-us">About us</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#our-products">Our products</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#prices">Prices</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#bestsellers">Bestsellers</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#reviews">Reviews</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-link" href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-container">
+        <a
+          class="header-logo-link"
+          href="./index.html"
+          aria-label="company logo"
+        >
+          <svg class="header-logo-icon" width="100" heigth="16">
+            <use href="./img/icons.svg#icon-minimal"></use>
+          </svg>
+        </a>
+        <nav class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#about-us">About us</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#our-products">Our products</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#prices">Prices</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#bestsellers">Bestsellers</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-item-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+        class="header-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+        >
+          <svg class="header-button-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-hamburger"></use>
+          </svg>
+          <span class="visually-hidden">open mobile menu</span>
+        </button>
+      </div>
     </header>
-</body>
+  </body>
 </html>
