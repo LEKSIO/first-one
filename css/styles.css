@@ -95,7 +95,8 @@ fieldset {
 
  */
 .header {
-  padding: 28px 0px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   background-color: var(--light-blue-bgd);
 }
 
@@ -128,8 +129,67 @@ fieldset {
   width: 32px;
   height: 32px;
   background-color: transparent;
-  color: var(--primary-brand-color);
 }
 
 .header-button-icon {
+  fill: var(--primary-brand);
+}
+/* 
+
+------   3 7 5   -------
+
+ */
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+/* 
+
+------   7 6 8   -------
+
+ */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .header {
+    padding-bottom: 27px;
+  }
+  .header-button {
+    width: 40px;
+    height: 40px;
+  }
+  .header-button-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* 
+
+------   1 4 4 0   -------
+
+ */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 60px;
+  }
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .header-menu-list {
+    display: flex;
+    gap: 30px;
+    padding: 8px;
+  }
+
+  .header-button {
+    display: none;
+  }
 }
