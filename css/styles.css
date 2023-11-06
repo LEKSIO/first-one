@@ -113,16 +113,35 @@ fieldset {
 }
 
 .header-menu {
-  display: none;
 }
 
 .header-menu-list {
+  display: none;
 }
 
 .header-menu-item {
+  cursor: pointer;
 }
 
 .menu-item-link {
+  position: relative;
+}
+.menu-item-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2;
+  left: 0;
+  background-color: var(--primary-brand);
+  visibility: hidden;
+  transition: all 0.16s ease-in-out;
+  transform: scaleX(0);
+}
+.menu-item-link:hover::after {
+  visibility: visible;
+  transform: scaleX(0.9);
 }
 
 .header-button {
@@ -180,13 +199,17 @@ fieldset {
     padding: 0px 60px;
   }
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .header-menu-list {
     display: flex;
     gap: 30px;
-    padding: 8px;
+    padding: 0px 8px;
+  }
+  .menu-item-link {
+    display: block;
+    padding: 34px 0px;
   }
 
   .header-button {
