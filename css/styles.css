@@ -48,6 +48,7 @@ img {
 }
 
 a {
+  display: block;
   color: currentColor;
   text-decoration: none;
 }
@@ -91,12 +92,12 @@ fieldset {
 }
 /* 
 
+
 ------   H E A D E R   -------
+
 
  */
 .header {
-  padding-top: 28px;
-  padding-bottom: 28px;
   background-color: var(--light-blue-bgd);
 }
 
@@ -107,6 +108,12 @@ fieldset {
 }
 
 .header-logo-link {
+  padding: 36px 0px;
+  transition: filter 0.1s linear;
+}
+.header-logo-link:hover,
+.header-logo-link:focus {
+  filter: drop-shadow(0px 0px 19px var(--primary-brand));
 }
 
 .header-logo-icon {
@@ -135,8 +142,8 @@ fieldset {
   bottom: -2;
   left: 0;
   background-color: var(--primary-brand);
+  transition: all 0.14s ease-in-out;
   visibility: hidden;
-  transition: all 0.16s ease-in-out;
   transform: scaleX(0);
 }
 .menu-item-link:hover::after {
@@ -147,7 +154,13 @@ fieldset {
 .header-button {
   width: 32px;
   height: 32px;
+  border-radius: 10%;
   background-color: transparent;
+  transition: box-shadow 0.1s linear;
+}
+.header-button:hover,
+.header-button:focus {
+  box-shadow: 0px 0px 5px var(--primary-brand);
 }
 
 .header-button-icon {
@@ -155,7 +168,9 @@ fieldset {
 }
 /* 
 
+
 ------   3 7 5   -------
+
 
  */
 @media screen and (min-width: 375px) {
@@ -165,7 +180,9 @@ fieldset {
 }
 /* 
 
+
 ------   7 6 8   -------
+
 
  */
 @media screen and (min-width: 768px) {
@@ -177,7 +194,12 @@ fieldset {
     font-size: 18px;
   }
   .header {
-    padding-bottom: 27px;
+  }
+  .header-logo-link {
+    padding: 40px 0px 39px;
+  }
+  .header-logo-icon {
+    width: 127px;
   }
   .header-button {
     width: 40px;
@@ -190,7 +212,9 @@ fieldset {
 }
 /* 
 
+
 ------   1 4 4 0   -------
+
 
  */
 @media screen and (min-width: 1440px) {
@@ -208,7 +232,6 @@ fieldset {
     padding: 0px 8px;
   }
   .menu-item-link {
-    display: block;
     padding: 34px 0px;
   }
 
