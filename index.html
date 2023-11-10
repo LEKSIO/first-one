@@ -58,29 +58,45 @@
           <span class="visually-hidden">open mobile menu</span>
         </button>
       </div>
-      <div class="mob-menu-nav">
-        <nav class="mob-navigation">
-          <ul class="mob-menu-list list">
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#about-us">About us</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#products">Our products</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#prices">Prices</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#bestsellers">Bestsellers</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="link-underline js-menu-link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+
+      <div class="menu-container is-hidden js-menu-container" id="mob-menu">
+        <div class="mob-menu-top">
+          <a href="./index.html" class="mob-menu-logo js-menu-link" aria-label="company logo">
+            <svg class="mob-menu-icon" width="100" height="16">
+              <use href="./img/minimal-icons.svg#icon-minimal-icon"></use>
+            </svg>
+          </a>
+          <button type="button" class="mob-menu-btn menu-toggle js-close-menu">
+            <svg class="mob-open-icon" width="32" height="32">
+              <use href="./img/minimal-icons.svg#icon-close"></use>
+            </svg>
+            <span class="visually-hidden">close mobile menu</span>
+          </button>
+        </div>
+        <div class="mob-menu-nav">
+          <nav class="mob-navigation">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#about-us">About us</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#products">Our products</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#prices">Prices</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#bestsellers">Bestsellers</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link-underline js-menu-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <script type="module" src="./js/modal-mob.js"></script>
