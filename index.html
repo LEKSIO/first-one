@@ -15,11 +15,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a
-          class="header-logo-link"
-          href="./index.html"
-          aria-label="company logo"
-        >
+        <a class="header-logo-link" href="#popup" aria-label="company logo">
           <svg class="header-logo-icon" width="100" height="16">
             <use href="./img/icons.svg#icon-minimal"></use>
           </svg>
@@ -46,10 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button
-          class="header-button"
-          type="button"
-        >
+        <button class="header-button" type="button">
           <svg class="header-button-icon" width="32" height="32">
             <use href="./img/icons.svg#icon-hamburger1"></use>
           </svg>
@@ -57,48 +50,60 @@
         </button>
       </div>
 
-      <div class="popup" id="popup">
-        <div class="popup__body">
-          <div class="popup__content">
-            <div class="container header header-container">
-              <a class="header-logo-link" href="./index.html" aria-label="company logo">
-                <svg class="header-logo-icon" width="100" height="16">
-                  <use href="./img/icons.svg#icon-minimal"></use>
-                </svg>
-              </a>
-              <button class="header-button popup__close" type="button">
-                <svg class="mob-open-icon" width="32" height="32">
-                  <use href="./img/icons.svg#icon-close"></use>
-                </svg>
-                <span class="visually-hidden">close mobile menu</span>
-              </button>
-            </div>
-            <div class="nav-container">
-              <div class="container mod-menu-nav">
-                <nav class="mod-navigation">
-                  <ul class="mod-menu-list list">
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#about-us">About us</a>
-                    </li>
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#products">Our products</a>
-                    </li>
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#prices">Prices</a>
-                    </li>
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#bestsellers">Bestsellers</a>
-                    </li>
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="mob-menu-item">
-                      <a class="link-underline js-menu-link" href="#contacts">Contacts</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
+      <div class="popup">
+        <div class="popup__content">
+          <div class="container header header-container">
+            <a
+              class="header-logo-link"
+              href="./index.html"
+              aria-label="company logo"
+            >
+              <svg class="header-logo-icon" width="100" height="16">
+                <use href="./img/icons.svg#icon-minimal"></use>
+              </svg>
+            </a>
+            <button class="header-button popup__close" type="button">
+              <svg class="mob-open-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+              <span class="visually-hidden">close mobile menu</span>
+            </button>
+          </div>
+          <div class="navigation-container">
+            <nav class="navigation container">
+              <ul class="navigation-list list">
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#about-us"
+                    >About us</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#products"
+                    >Our products</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#prices"
+                    >Prices</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#bestsellers"
+                    >Bestsellers</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#reviews"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="link-underline js-menu-link" href="#contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

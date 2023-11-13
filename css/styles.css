@@ -178,26 +178,47 @@ fieldset {
   width: 100%;
   height: 100%;
   top: 0;
-  /* left: 0; */
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8 ease-in-out 0s;
 }
-.popup__body {
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .navigation-container {
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0px) ratateX(0deg);
+}
+
+/* .popup__body {
   height: inherit;
-}
+  border: 5px solid red;
+} */
 .popup__content {
+  border: 5px solid orange;
   height: inherit;
 }
-.nav-container {
+.navigation-container {
+  border: 5px solid black;
   background-color: rgba(12, 12, 12, 0.3);
   height: inherit;
+  transition: all 0.8 ease-in-out 0s;
+  opacity: 0;
+  /* transform: translate(0px, -100%); */
+  transform: perspective(600px) translate(0px, -100%) ratateX(45deg);
 }
-.mod-menu-nav {
+.navigation {
+  border: 5px solid blue;
   padding-top: 122px;
   height: inherit;
   background-color: var(--white-bgd);
   display: flex;
   justify-content: center;
 }
-.mod-menu-list {
+.navigation-list {
+  border: 5px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
