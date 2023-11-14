@@ -1,3 +1,15 @@
+const refs = {
+  body: document.querySelector("body"),
+  openBtn: document.querySelector(".header-button"),
+  popup: document.querySelector(".popup"),
+};
+const timeout = 800;
+let unlock = true;
+
+refs.popup.addEventListener("click", openPopup);
+
+function openPopup() {}
+
 // (() => {
 //   const mobileMenu = document.querySelector(".js-menu-container");
 //   const openMenuBtn = document.querySelector(".js-open-menu");
