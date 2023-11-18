@@ -93,7 +93,7 @@ fieldset {
 /* 
 
 
-------   H E A D E R   -------
+============    H E A D E R    ===========
 
 
  */
@@ -175,7 +175,7 @@ fieldset {
 /* 
 
 
-------   M O D A L   -------
+============    M O D A L   in   H E A D E R    ===========
 
 
  */
@@ -224,6 +224,7 @@ fieldset {
 .js-menu-link {
   text-align: center;
 }
+
 /* 
 
 
