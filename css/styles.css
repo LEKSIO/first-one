@@ -30,8 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul {
@@ -223,6 +222,31 @@ fieldset {
 }
 .js-menu-link {
   text-align: center;
+}
+/* 
+
+
+============    H E R O    ===========
+
+
+ */
+.hero {
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 140px 0 313px;
+  background-color: var(--light-blue-bgd);
+  background-image: url(../img/hero/hero_mobile_1x.webp);
+}
+.hero-h1 {
+  max-width: 285px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero-paragraph {
+}
+.hero-button-link {
 }
 
 /* 
