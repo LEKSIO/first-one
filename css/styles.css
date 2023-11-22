@@ -1,5 +1,5 @@
 :root {
-  --white-bgd: #fff;
+  --white: #fff;
   --light-blue-bgd: #f7faff;
   --primary-brand: #0a224a;
   --accent-stat: #061835;
@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.5; /* 150% */
   color: var(--primary-brand);
-  background-color: var(--white-bgd);
+  background-color: var(--white);
 }
 
 p,
@@ -210,7 +210,7 @@ fieldset {
 .navigation {
   padding-top: 122px;
   height: inherit;
-  background-color: var(--white-bgd);
+  background-color: var(--white);
   display: flex;
   justify-content: center;
 }
@@ -243,10 +243,22 @@ fieldset {
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 .hero-paragraph {
+  margin-bottom: 28px;
 }
 .hero-button-link {
+  max-width: 224px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--primary-brand);
+  padding: 12px 65px;
+  transition: all 0.2s ease-in-out;
+}
+.hero-button-link:hover,
+.hero-button-link:active {
+  background-color: var(--accent-stat);
 }
 
 /* 
