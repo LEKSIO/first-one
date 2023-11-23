@@ -226,7 +226,7 @@ fieldset {
 /* 
 
 
-============    H E R O    ===========
+========    H E R O    ===========
 
 
  */
@@ -306,6 +306,28 @@ fieldset {
   .header-button-icon {
     width: 40px;
     height: 40px;
+  }
+  /* 
+        hero
+   */
+  .hero {
+    max-width: 768px;
+    background-image: none;
+    background-color: var(--white);
+    padding: 61px 0 100px;
+  }
+  .hero-h1 {
+    z-index: 1;
+    font-size: 50px;
+    margin: 4px 0 0;
+    max-width: 648px;
+  }
+  .hero-images-wrapper {
+    display: flex;
+    width: 100%;
+    z-index: 0;
+    height: 531px;
+    margin-bottom: 32px;
   }
 }
 /* 
