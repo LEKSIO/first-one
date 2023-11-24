@@ -153,6 +153,9 @@ fieldset {
 .header-button {
   width: 32px;
   height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10%;
   background-color: transparent;
   transition: box-shadow 0.1s linear;
@@ -179,6 +182,7 @@ fieldset {
 
  */
 .popup {
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -244,6 +248,9 @@ fieldset {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 14px;
+}
+.hero-images-wrapper {
+  display: none;
 }
 .hero-paragraph {
   margin-bottom: 28px;
@@ -316,18 +323,33 @@ fieldset {
     background-color: var(--white);
     padding: 61px 0 100px;
   }
+
   .hero-h1 {
     z-index: 1;
-    font-size: 50px;
     margin: 4px 0 0;
+    font-size: 50px;
     max-width: 648px;
+    position: absolute;
   }
   .hero-images-wrapper {
-    display: flex;
-    width: 100%;
-    z-index: 0;
-    height: 531px;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 32px;
+    display: flex;
+  }
+  .hero-img1 {
+    width: 308px;
+    height: 329px;
+    object-fit: cover;
+  }
+  .hero-img2 {
+    width: 367px;
+    height: 531px;
+    object-fit: cover;
+  }
+  .hero-paragraph {
+  }
+  .hero-button-link {
   }
 }
 /* 
