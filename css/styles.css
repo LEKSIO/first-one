@@ -315,8 +315,12 @@ fieldset {
     height: 40px;
   }
   /* 
+
+
         hero
-   */
+  
+  
+  */
   .hero {
     max-width: 768px;
     background-image: none;
@@ -348,8 +352,12 @@ fieldset {
     object-fit: cover;
   }
   .hero-paragraph {
+    width: 312px;
+    margin-bottom: 30px;
   }
   .hero-button-link {
+    padding: 17px 65px;
+    line-height: 1.33;
   }
 }
 /* 
