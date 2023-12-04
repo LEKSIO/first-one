@@ -360,32 +360,3 @@ fieldset {
     line-height: 1.33;
   }
 }
-/* 
-
-
-------   1 4 4 0   -------
-
-
- */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0px 60px;
-  }
-  .header {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .header-menu-list {
-    display: flex;
-    gap: 30px;
-    padding: 0px 8px;
-  }
-  .menu-item-link {
-    padding: 34px 0px;
-  }
-
-  .header-button {
-    display: none;
-  }
-}
