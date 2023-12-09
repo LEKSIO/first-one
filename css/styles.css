@@ -89,50 +89,13 @@ fieldset {
   padding-left: 16px;
   padding-right: 16px;
 }
-/* 
 
-
-=          H E A D E R    
-
-
- */
-.header {
-  background-color: var(--light-blue-bgd);
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-logo-link {
-  padding: 36px 0px;
-  transition: filter 0.1s linear;
-}
-.header-logo-link:hover,
+/* .header-logo-link:hover,
 .header-logo-link:focus {
   filter: drop-shadow(0px 0px 19px var(--primary-brand));
-}
+} */
 
-.header-logo-icon {
-}
-
-.header-menu {
-}
-
-.header-menu-list {
-  display: none;
-}
-
-.header-menu-item {
-  cursor: pointer;
-}
-
-.menu-item-link {
-  position: relative;
-}
-.menu-item-link::after {
+/* .menu-item-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -144,43 +107,12 @@ fieldset {
   transition: all 0.14s ease-in-out;
   visibility: hidden;
   transform: scaleX(0);
-}
-.menu-item-link:hover::after {
+} */
+/* .menu-item-link:hover::after {
   visibility: visible;
   transform: scaleX(0.9);
-}
+} */
 
-.header-button {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10%;
-  background-color: transparent;
-  transition: box-shadow 0.1s linear;
-}
-.header-button:hover,
-.header-button:focus {
-  box-shadow: 0px 0px 5px var(--primary-brand);
-}
-
-.header-button-icon {
-  fill: var(--primary-brand);
-}
-.navigation-list {
-  width: 100%;
-}
-.mob-menu-item {
-  width: 100%;
-}
-/* 
-
-
-============    M O D A L   in   H E A D E R    ===========
-
-
- */
 .popup {
   z-index: 2;
   position: fixed;
