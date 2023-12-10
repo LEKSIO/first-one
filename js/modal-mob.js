@@ -1,18 +1,18 @@
-const refs = {
-  body: document.querySelector("body"),
-  openBtn: document.querySelector(".popup__open"),
-  closeBtn: document.querySelector(".popup__close"),
-  popup: document.querySelector(".popup"),
-};
-const timeout = 500;
-let unlock = true;
-
-refs.openBtn.addEventListener("click", openPopup);
-refs.closeBtn.addEventListener("click", closePopup);
-
-function openPopup(e) {
-  refs.popup.classList.add("open");
+let n = 0;
+function changeStr(str) {
+  return function (newStr) {
+    str = `${++n}+${str}${newStr}`;
+    return str;
+  };
 }
-function closePopup(e) {
-  refs.popup.classList.remove("open");
-}
+
+const initStartStr = changeStr("Test");
+console.dir(initStartStr);
+
+setTimeout(() => {
+  const s1 = initStartStr("+ONE");
+  const s2 = initStartStr("+TWO");
+  const s3 = initStartStr("+THREE");
+  console.dir(initStartStr);
+}, 1000);
+// console.log("Result: ", change1, change2);
