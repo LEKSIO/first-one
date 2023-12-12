@@ -132,21 +132,3 @@ fieldset {
   opacity: 1;
   transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
 }
-
-.popup__content {
-  height: inherit;
-}
-.navigation-container {
-  background-color: rgba(12, 12, 12, 0.3);
-  height: inherit;
-  transition: all 0.5s ease-in-out 0s;
-  opacity: 0;
-  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-}
-.navigation {
-  padding-top: 122px;
-  height: inherit;
-  background-color: var(--white);
-  display: flex;
-  justify-content: center;
-}
