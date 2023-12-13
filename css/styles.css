@@ -124,11 +124,3 @@ fieldset {
   visibility: hidden;
   transition: all 0.5s ease-in-out 0s;
 }
-.popup.open {
-  opacity: 1;
-  visibility: visible;
-}
-.popup.open .navigation-container {
-  opacity: 1;
-  transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
-}
